@@ -1,0 +1,16 @@
+"CSCRefreshHeaderIdleText" = "아래로 당겨 새로고침";
+"CSCRefreshHeaderPullingText" = "놓으면 새로고침";
+"CSCRefreshHeaderRefreshingText" = "로딩중...";
+
+"CSCRefreshAutoFooterIdleText" = "탭 또는 위로 당겨 로드함";
+"CSCRefreshAutoFooterRefreshingText" = "로딩중...";
+"CSCRefreshAutoFooterNoMoreDataText" = "더이상 데이터 없음";
+
+"CSCRefreshBackFooterIdleText" = "위로 당겨 더 로드 가능";
+"CSCRefreshBackFooterPullingText" = "놓으면 더 로드됨.";
+"CSCRefreshBackFooterRefreshingText" = "로딩중...";
+"CSCRefreshBackFooterNoMoreDataText" = "더이상 데이터 없음";
+
+"CSCRefreshHeaderLastTimeText" = "마지막 업데이트: ";
+"CSCRefreshHeaderDateTodayText" = "오늘";
+"CSCRefreshHeaderNoneLastDateText" = "기록 없음";

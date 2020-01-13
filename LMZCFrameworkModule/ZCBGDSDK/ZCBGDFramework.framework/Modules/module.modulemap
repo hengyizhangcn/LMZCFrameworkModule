@@ -1,0 +1,11 @@
+framework module ZCBGDFramework {
+  umbrella header "ZCBGDFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module ZCBGDFramework.Swift {
+    header "ZCBGDFramework-Swift.h"
+    requires objc
+}

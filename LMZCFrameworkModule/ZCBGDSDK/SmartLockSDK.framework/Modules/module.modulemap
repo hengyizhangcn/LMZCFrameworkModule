@@ -1,0 +1,6 @@
+framework module SmartLockSDK {
+  umbrella header "SmartLockSDK.h"
+
+  export *
+  module * { export * }
+}

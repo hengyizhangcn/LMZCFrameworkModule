@@ -1,0 +1,16 @@
+"CSCRefreshHeaderIdleText" = "Pull down to refresh";
+"CSCRefreshHeaderPullingText" = "Release to refresh";
+"CSCRefreshHeaderRefreshingText" = "Loading...";
+
+"CSCRefreshAutoFooterIdleText" = "Tap or pull up to load more";
+"CSCRefreshAutoFooterRefreshingText" = "Loading...";
+"CSCRefreshAutoFooterNoMoreDataText" = "No more data";
+
+"CSCRefreshBackFooterIdleText" = "Pull up to load more";
+"CSCRefreshBackFooterPullingText" = "Release to load more.";
+"CSCRefreshBackFooterRefreshingText" = "Loading...";
+"CSCRefreshBackFooterNoMoreDataText" = "No more data";
+
+"CSCRefreshHeaderLastTimeText" = "Last updated: ";
+"CSCRefreshHeaderDateTodayText" = "Today";
+"CSCRefreshHeaderNoneLastDateText" = "No record";

@@ -1,0 +1,6 @@
+framework module CSCFrameworkV2 {
+  umbrella header "CSCFrameworkV2.h"
+
+  export *
+  module * { export * }
+}

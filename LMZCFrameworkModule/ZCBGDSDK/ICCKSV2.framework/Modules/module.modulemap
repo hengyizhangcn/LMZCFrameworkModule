@@ -1,0 +1,6 @@
+framework module ICCKSV2 {
+  umbrella header "ICCKSV2.h"
+
+  export *
+  module * { export * }
+}

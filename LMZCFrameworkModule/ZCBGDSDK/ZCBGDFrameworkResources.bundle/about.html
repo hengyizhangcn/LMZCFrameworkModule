@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于简兑虚拟卡</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            overflow-y: visible !important;
+            overflow-x: hidden !important;
+            font-size: .26rem;
+        }
+
+        .main {
+            padding: 0.3rem .3rem 0;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: .30rem;
+            height: 1rem;
+            line-height: 1rem;
+            font-weight: normal;
+        }
+
+        h3 {
+            font-size: .30rem;
+            margin: .3rem 0 .2rem;
+            font-weight: 500
+        }
+
+        .tx {
+            text-indent: 2em;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        p {
+            letter-spacing: 1px;
+            line-height: 1.5;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body style="display:none;">
+    <div class="main">
+        
+        <h3>一、总体介绍</h3>
+        <p class="tx">简兑虚拟卡是一款针对个人用户移动智能设备上使用的集交易、账单管理、卡片管理、转账和生活缴费为一体的移动互联网产品。</p>
+        
+        <h3>二、简兑特点</h3>
+        <p>1.安全性强：简兑采用了基于CCKS组合诚信密钥体系的算法，为用户提供放心可靠的支付环境，杜绝用户信息泄露和盗刷风险。</p>
+        <p>2.操作简便：简兑操作简便快捷，用户使用NFC或者二维码均可实现支付，有效提高支付效率。</p>
+        <p>3.功能丰富：简兑虚拟卡提供多样化的支付途径，根据用户手机功能自动显示，用户可手动切换支付场景。 简兑除了提供支付功能外，还提供了用户申请虚拟卡、查看账单、充值、转账等功能，为个人用户日常生活提供方便快捷的移动支付工具。</p>
+        <p>4.兼容性强：简兑不仅可以在手机上安装应用，还可在多种移动智能设备上使用。</p>
+    </div>
+    <script>
+        function fn() {
+            var whdef = 100 / 750;// 表示1440的设计图,使用100PX的默认值,设计图多少就写多少
+            var wH = window.innerHeight;// 当前窗口的高度
+            var wW = window.innerWidth;// 当前窗口的宽度
+            var rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+            var html = document.querySelector('html');
+            console.log(wH, wW, rem);
+            document.body.style.display = "block";
+            html.style.fontSize = rem + "px";
+            // $('html').css('font-size', rem + "px");
+        };
+        window.addEventListener("resize", fn);
+        var i = 1;
+        function ready(fn) {
+            i++;
+            console.log(i);
+            if (document.addEventListener) {		//标准浏览器
+                document.addEventListener('DOMContentLoaded', function () {
+                    //注销时间，避免重复触发
+                    document.removeEventListener('DOMContentLoaded', arguments.callee, false);
+                    fn();		//运行函数
+                }, false);
+            } else if (document.attachEvent) {		//IE浏览器
+                document.attachEvent('onreadystatechange', function () {
+                    if (document.readyState == 'complete') {
+                        document.detachEvent('onreadystatechange', arguments.callee);
+                        fn();		//函数运行
+                    }
+                });
+            }
+        };
+        ready(fn);
+    </script>
+</body>
+
+</html>
